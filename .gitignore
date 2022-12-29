@@ -32,3 +32,5 @@ testem.log
 
 frontend/.DS_Store
 frontend/Thumbs.db
+
+backend/__pycache__
