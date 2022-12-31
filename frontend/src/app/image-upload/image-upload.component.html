@@ -1,0 +1,36 @@
+<div class="container-fluid">
+  <div class="mb-3 row g-3 text-center">
+    <form [formGroup]="uploadForm" (ngSubmit)="submit()">
+      <!-- Upload Image -->
+      <div>
+        <input
+          (change)="this.onFilechange($event)"
+          accept="image/*"
+          class="form-control m-3"
+          type="file"
+          id="formFile"
+        />
+        <label for="formFile" class="form-label"></label>
+      </div>
+
+      <!-- Submit Botton -->
+      <div class="col-auto">
+        <button
+          (click)="this.upload()"
+          type="button"
+          class="btn btn-primary m-1 mt-3"
+        >
+          Upload
+        </button>
+      </div>
+
+      <!-- Image Preview -->
+      <div
+        class="imagePreview text-center img-fluid border border-5 border-primary m-1"
+        *ngIf="imageURL && imageURL !== ''"
+      >
+        <img [src]="imageURL" [alt]="uploadForm.value.name" />
+      </div>
+    </form>
+  </div>
+</div>
