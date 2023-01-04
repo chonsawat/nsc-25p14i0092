@@ -1,0 +1,6 @@
+.imagePreview img{
+    
+    width: 480px;
+    /* height: 100%; */
+    object-fit: cover;
+}
