@@ -32,5 +32,6 @@ testem.log
 
 frontend/.DS_Store
 frontend/Thumbs.db
+frontend/pnpm-lock.yaml
 
 backend/__pycache__

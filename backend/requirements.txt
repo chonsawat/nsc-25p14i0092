@@ -1,3 +1,4 @@
 fastapi[all]
 tensorflow
 beautifulsoup4
+Pillow
